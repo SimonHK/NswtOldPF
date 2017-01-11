@@ -1,0 +1,9 @@
+<!--循环：friendlink count：50-->
+<% DataTable dt_1 = TemplateData.getFriendLinkList("friendlink","集团其他网站链接","50","null");
+if(dt_1==null){write("没有找到友情链接：集团其他网站链接");}else{
+for(int i=0;i<dt_1.getRowCount();i++){
+DataRow friendlink_1  = dt_1.getDataRow(i);
+%>
+
+                  <option value="${friendlink_1.url}">${friendlink_1.name}</option>
+                 <%}}%>

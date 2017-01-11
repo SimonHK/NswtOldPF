@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>${catalog.name}</title>
+<link href="../images/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<cms:include file="include/head.html"></cms:include>
+<table class="Table" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td  class="lNavBg" align="left" valign="top">
+    	<div class="navLeft">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">		  
+		  <tr>
+			<td class="Line"></td>
+		  </tr>
+		  <tr><td height="5"></td></tr>
+		  <tr>
+			<td>
+			<div class="DivNav current"><a href="${catalog.link}" class="menuTxt01">${catalog.name}</a></div>
+			</td>
+		  </tr>
+		</table>
+		</div>
+	</td>
+	
+    <td width="743" rowspan="2" align="left" valign="top">
+		<table width="100%"  border="0" align="left" cellpadding="0" cellspacing="0">
+			<tr><td height="15"></td></tr>
+		  <tr>
+			<td class="TitleTxt03">&gt;&gt;<cms:link type="currentposition" split=">">{nswtp当前位置}</cms:link></td>
+		  </tr>
+		  <tr>
+			<td class="tdBoreder02" valign="top">
+			<div class="banner"><img src="${level}${catalog.imagepath}" /></div>
+			<div>
+	          ${article.content}
+			</div>
+		<cms:include file="include/blockrf.html"></cms:include>
+			</td>
+		  </tr>
+	  </table>
+	</td>
+  </tr>
+  <tr><td class="navBottom">&nbsp;</td></tr>
+</table>
+<script>
+var curCatalogInnerCode="${Catalog.InnerCode}";//获取当前页面所在栏目的InnerCode，这句不能够写在外部js文件里
+for(var i=1,len=curCatalogInnerCode.length; i<len/6+1; i++){
+    var innerCode=curCatalogInnerCode.substring(0,i*6);
+    var catalogElement=document.getElementById(innerCode);
+    if(catalogElement){
+        catalogElement.className+=" current";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<script type="text/javascript" src="${StyleDirPath}sChange.js"></script>
+<style>
+.changeBox_style${PlayerID} { float:left; width:${Width}px; height:${Height}px; padding:2px; position:relative; border:1px solid #666; background-color:#666; }
+.changeBox_style${PlayerID} .a_bigImg img { position:absolute; top:2px; left:2px; display:none; }
+.changeBox_style${PlayerID} .ul_changeThumb { margin:0; padding:0; font-size:0px; line-height:1em; list-style:none; position:absolute; left:2px; bottom:4px; overflow:hidden; }
+.changeBox_style${PlayerID} .ul_changeThumb li { float:left; margin-right:5px; padding:8px 0 0;  }
+.changeBox_style${PlayerID} .ul_changeThumb li a{ _float:left;}
+.changeBox_style${PlayerID} .ul_changeThumb img { border:2px solid #eee; }
+.changeBox_style${PlayerID} .ul_changeThumb li.now {background:url(${StyleDirPath}now.gif) no-repeat 50% 0;}
+.changeBox_style${PlayerID} .ul_changeThumb li.now img{ border:2px solid #FF9900;}
+</style>
+
+<div class="changeBox_style${PlayerID}" id="change_${PlayerID}">
+	<playerImgArea>
+	<a href="${URL}" class="a_bigImg" target="_blank"><img src="${ImgSrc}" width="${Width}" height="${Height}" title="${Alt}" /></a> 
+	</playerImgArea>
+  <ul class="ul_changeThumb">
+  	<playerNavArea>
+    <li><a href="#;"><img src="${thumbImgSrc}" width="67" height="40" alt="${Alt}" /></a></li>
+    </playerNavArea>
+  </ul>
+</div>
+              
+<script type="text/javascript">
+	
+	sChange({
+		changeObj : '#change_${PlayerID} .a_bigImg img',
+		thumbObj : '#change_${PlayerID} ul.ul_changeThumb li'
+	});
+	
+	miniSelector('#change_${PlayerID} .ul_changeThumb')[0].style.width=${Width}+10+'px';
+	miniSelector('#change_${PlayerID} .a_bigImg img').each(function (changElm) {
+      changElm.height=${Height}-50;
+	});
+</script>

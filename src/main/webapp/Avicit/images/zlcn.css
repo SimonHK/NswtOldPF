@@ -1,0 +1,22 @@
+@charset "gb2312";
+/* CSS Document */
+.news{border:1px #b4c7d8 solid; background:url(newline.jpg) repeat-x left top;}
+.titlecn{ height:28px; line-height:28px; background:url(icon2.gif) no-repeat 15px center; padding-left:28px; font-size:14px; color:#154e83;}
+.titlebg{ background-color:#b7daee; margin-top:2px; margin-bottom:2px;}
+.titlecn .more1{margin-top:6px; margin-right:16px; _display:inline;}
+.mb{ margin-bottom:10px; margin-top:8px;}
+.infoqy{ border:1px #b7daee solid; background-color:#d7eff9; text-align:center;  padding-top:10px; padding-bottom:10px;}
+select,input{ border:1px #bbbbbb solid; height:20px; line-height:20px;}
+.tbinfo{width:909px; margin:0 auto;}
+.sear{height:30px; line-height:30px; margin:0 auto; width:760px; text-align:left;}
+.tbinfo{ border:1px solid #b7daee; background-color:#ffffff; display:block; border-collapse:collapse; }
+.tbinfo td{ text-align:center; color:#054781; border:1px solid #b7daee; border-collapse:collapse; height:32px; vertical-align:middle;}
+.trbg{background-color:#eaf3f8;}
+.trbg td{border:none;}
+.vote{width:62px; height:22px; background:url(vote.jpg) no-repeat left top; border-width:0px; cursor:pointer;}
+.tbinfo input{border:none;}
+.comment{background:url(comment.jpg) no-repeat 6px center; height:28px; line-height:28px; color:#044682; padding-left:26px; border-bottom:1px dashed #c8d8f2; font-size:14px;}
+.page1{ margin-top:10px; border:#eeeeee 1px solid; color:#444444; font-size:12px; text-align:left; padding-left:12px; height:28px; line-height:28px; padding-right:10px;} 
+.commentin{border:1px #8899ab solid; background-color:#f6fafd; width:160px;}
+.sub{width:128px; height:20px; background:url(commentsub.jpg) no-repeat left top; border-width:0px; margin-top:6px; cursor:pointer;}
+.subcomment{padding-left:10px; height:30px; padding-top:6px; padding-bottom:6px;}

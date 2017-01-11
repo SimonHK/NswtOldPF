@@ -1,0 +1,39 @@
+<script type="text/javascript" src="${StyleDirPath}sChange.js"></script>
+<style>
+.changeBox_style${PlayerID} { float:left; width:${Width}px; height:${Height}px; padding:2px; position:relative; border:1px solid #aaa; }
+.changeBox_style${PlayerID} .a_bigImg img { position:absolute; top:2px; left:2px; display:none; }
+.changeBox_style${PlayerID} .ul_changeThumb { margin:0; padding:0; font-size:0px; line-height:1em; list-style:none; position:absolute; right:5px; bottom:7px; padding-left:19px; overflow:hidden; }
+.changeBox_style${PlayerID} .ul_changeThumb li { margin:0; padding:0; display: -moz-inline-stack; display:inline-block; *display:inline;*zoom:1;
+}
+.changeBox_style${PlayerID} .ul_changeThumb span { font-size:11px; font-family:Verdana; display: -moz-inline-stack; display:inline-block; *display:inline;*zoom:1; line-height:1.1;
+padding:0px 3px; margin-right:2px; border:1px solid #999; background:#999; color:#fff; filter:alpha(opacity=60); opacity:0.6; cursor:hand; cursor:pointer; }
+.changeBox_style${PlayerID} .ul_changeThumb span.now { border:1px solid #FF8800; background:#FF8800; filter:alpha(opacity=100); opacity:1; }
+.changeBox_style${PlayerID} .changeDiv { position:absolute; top:2px; left:2px; display:none; }
+.changeBox_style${PlayerID} .changeDiv h3 { margin:0; padding:0; position:absolute; left:0px; bottom:0; width:${Width}px; height:24px; line-height:24px; font-size:12px; font-weight:normal; background:#000; filter:alpha(opacity=60); opacity:0.6; }
+.changeBox_style${PlayerID} .changeDiv h3 a { display:block; padding-left:12px; text-align:left; width:66%; white-space:nowrap; overflow:hidden; color:#FFF; }
+</style>
+
+<div class="changeBox_style${PlayerID}" id="change_${PlayerID}">
+	
+	<playerImgArea>
+  <div class="changeDiv">
+    <h3><a href="${URL}" target="_blank">${Alt}</a></h3>
+    <a href="${URL}" target="_blank"><img src="${ImgSrc}" width="${Width}" height="${Height}" title="${Alt}" /></a>
+  </div>
+  </playerImgArea>
+  <ul class="ul_changeThumb">
+  	<playerNavArea>
+    <li><span>${PicNo}</span></li>
+    </playerNavArea>
+  </ul>
+  
+</div>
+              
+<script type="text/javascript">
+	
+	sChange({
+		changeObj : '#change_${PlayerID} div.changeDiv',
+		thumbObj : '#change_${PlayerID} ul.ul_changeThumb span'
+	});
+	
+</script>

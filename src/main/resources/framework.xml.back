@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework>
+	<application>
+		<config name="Code">AVICCMS</config>
+		<config name="Name">管理系统</config>
+		<config name="Charset">GBK</config>
+		<config name="DebugMode">true</config>
+		<config name="LogLevel">Debug</config>
+		<config name="LoginClass">com.nswt.platform.Login</config>
+		<config name="LoginPage">Login.jsp</config>
+		<config name="MinimalMemory">true</config> 
+		<config name="CodeSource">com.nswt.platform.pub.PlatformCodeSource</config>
+		<config name="WorkflowAdapter">com.nswt.cms.workflow.CMSWorkflowAdapter</config>
+		<config name="ExistPlatformDB">true</config>
+		<config name="PDM">Platform,NSWT,WorkFlow,BBS,Shop</config>
+	</application>
+	<cache>
+		<provider class="com.nswt.bbs.ForumCache" />
+		<provider class="com.nswt.platform.pub.PlatformCache" />
+		<provider class="com.nswt.cms.pub.CMSCache" />
+		<provider class="com.nswt.cms.document.MessageCache" />
+	</cache>
+	<cron>
+		<config name="RefreshInterval">30000</config>
+		<taskManager class="com.nswt.datachannel.WebCrawlTaskManager" />
+		<taskManager class="com.nswt.datachannel.FTPCrawlTaskManager" />
+		<taskManager class="com.nswt.cms.dataservice.FullTextTaskManager" />
+		<taskManager class="com.nswt.cms.datachannel.PublishTaskManager" />
+		<task class="com.nswt.framework.FrameworkTask" time="30 10,16 * * *" />
+		<task class="com.nswt.cms.dataservice.ADUpdating" time="*/30 * * * *" />
+		<task class="com.nswt.cms.datachannel.DeployTask" time="* * * * *" />
+		<task class="com.nswt.cms.datachannel.PublishTask" time="* * * * *" />
+		<task class="com.nswt.cms.stat.StatUpdateTask" time="*/5 * * * *" />
+		<task class="com.nswt.cms.datachannel.ArticleArchiveTask" time="0 0 1 * *" />
+		<task class="com.nswt.cms.datachannel.ArticleCancelTopTask" time="*/5 * * * *" />
+		<task class="com.nswt.cms.document.ArticleRelaTask" time="* * * * *" />
+		<task class="com.nswt.cms.site.TagUpdateTask" time="0 * * * *" />
+		<task class="com.nswt.datachannel.InnerSyncTask" time="* * * * *" />
+		<task class="com.nswt.datachannel.DBSyncTask" time="* * * * *" />
+	</cron>
+	<allowUploadExt>
+		<config name="AllowAttachExt">doc,docx,xls,xlsx,ppt,pptx,pdf,swf,rar,zip,txt,xml,html,htm,css,js,db,dat</config>
+		<config name="AllowAudioExt">mp3</config>
+		<config name="AllowImageExt">jpg,gif,jpeg,png,bmp,tif,zip</config>
+		<config name="AllowVideoExt">asx,flv,avi,wmv,mp4,mov,asf,mpg,rm,rmvb</config>
+	</allowUploadExt>
+	<databases>
+		<database name="Default">
+			<config name="Type">MYSQL</config>
+			<config name="ServerAddress">10.1.43.78</config>
+			<config name="Port">3306</config>
+			<config name="Name">avicit</config>
+			<config name="UserName">root</config>
+			<config name="Password">10301</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="OracleEmployeer">
+			<config name="Type">ORACLE</config>
+			<config name="ServerAddress">10.1.43.78</config>
+			<config name="Port">1521</config>
+			<config name="Name">orcl</config>
+			<config name="UserName">hr</config>
+			<config name="Password">hr</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="OracleUser">
+			<config name="Type">ORACLE</config>
+			<config name="ServerAddress">10.1.43.78</config>
+			<config name="Port">1521</config>
+			<config name="Name">orcl</config>
+			<config name="UserName">appsys</config>
+			<config name="Password">appsys</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="DefaultOracle9">
+			<config name="Type">ORACLE</config>
+			<config name="ServerAddress">10.1.43.58</config>
+			<config name="Port">1521</config>
+			<config name="Name">orcl9</config>
+			<config name="UserName">nswt</config>
+			<config name="Password">10301</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="DefaultMYSQL">
+			<config name="Type">MYSQL</config>
+			<config name="ServerAddress">10.1.43.78</config>
+			<config name="Port">3306</config>
+			<config name="Name">nswt</config>
+			<config name="UserName">root</config>
+			<config name="Password">10301</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="DefaultDB2">
+			<config name="Type">DB2</config>
+			<config name="ServerAddress">10.1.43.57</config>
+			<config name="Port">50000</config>
+			<config name="Name">nswtdemo</config>
+			<config name="UserName">db2admin</config>
+			<config name="Password">nswt10301</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">ZDMaxNo</config>
+		</database>
+		<database name="DefaultSybase">
+			<config name="Type">SYBASE</config>
+			<config name="ServerAddress">10.1.43.83</config>
+			<config name="Port">5000</config>
+			<config name="Name">nswt</config>
+			<config name="UserName">sa</config>
+			<config name="Password">nswt10301</config>
+			<config name="MaxConnCount">1000</config>
+			<config name="InitConnCount">0</config>
+			<config name="TestTable">test</config>
+		</database>
+		<database name="WAS_ORACLE">
+			<config name="Type">ORACLE10</config>
+			<config name="JNDIName">jdbc/oracle_nswt</config>
+		</database>
+		<database name="WAS_DB2">
+			<config name="Type">DB2</config>
+			<config name="JNDIName">jdbc/oracle_nswt</config>
+		</database>
+		<database name="Tomcat_MYSQL">
+			<config name="Type">MYSQL</config>
+			<config name="JNDIName">jdbc/mysql</config>
+		</database>
+	</databases>
+</framework>

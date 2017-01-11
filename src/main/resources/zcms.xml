@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<extend>
+		<action class="com.nswt.cms.template.generator.BeforeTemplateParse" />
+		<action class="com.nswt.cms.template.generator.BeforeTemplateCompile" />
+	</extend>
+</config>

@@ -1,0 +1,35 @@
+<script type="text/javascript" src="${StyleDirPath}sChange.js"></script>
+<style>
+.changeBox_style${PlayerID} { float:left; width:${Width}px; height:${Height}px; padding:2px; position:relative; border:1px solid #aaa; }
+.changeBox_style${PlayerID} .a_bigImg img { position:absolute; top:2px; left:2px; display:none; }
+.changeBox_style${PlayerID} .changeDiv { position:absolute; top:2px; left:2px; display:none; }
+.changeBox_style${PlayerID} .changeDiv h3 { margin:0; padding:0; position:absolute; left:0px; bottom:0; width:${Width}px; height:24px; line-height:24px; font-size:12px; font-weight:normal; background:#000; filter:alpha(opacity=60); opacity:0.6; }
+.changeBox_style${PlayerID} .changeDiv h3 a { display:block; padding-left:12px; width:77%; white-space:nowrap; overflow:hidden; color:#FFF; }
+
+.changeBox_style${PlayerID} .a_last,
+.changeBox_style${PlayerID} .a_next { position:absolute; bottom:6px; width:18px; height:18px; background:url(${StyleDirPath}bot3.png) no-repeat; _background:url(${StyleDirPath}bot3.gif) no-repeat; text-indent:-999em; overflow:hidden; }
+.changeBox_style${PlayerID} .a_last { right:30px; background-position:0 0; }
+.changeBox_style${PlayerID} .a_next { right:10px; background-position:-20px 0; }
+.changeBox_style${PlayerID} .a_last:hover { background-position:0 -20px; }
+.changeBox_style${PlayerID} .a_next:hover { background-position:-20px -20px; }
+</style>
+
+<div class="changeBox_style${PlayerID}" id="change_${PlayerID}">
+	<playerImgArea>
+  <div class="changeDiv">
+    <h3><a href="${URL}" target="_blank">${Alt}</a></h3>
+    <a href="${URL}" target="_blank"><img src="${ImgSrc}" width="${Width}" height="${Height}" title="${Alt}" /></a>
+  </div>
+  </playerImgArea>
+  <a href="#;" class="a_last" title="上一个">上一个</a><a href="#;" class="a_next" title="下一个">下一个</a>
+</div>
+              
+<script type="text/javascript">
+	
+	sChange({
+		changeObj : '#change_${PlayerID} div.changeDiv',
+		botPrev : '#change_${PlayerID} .a_last',
+		botNext : '#change_${PlayerID} .a_next'
+	});
+	
+</script>

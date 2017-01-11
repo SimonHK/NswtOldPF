@@ -1,0 +1,88 @@
+@charset "gb2312";
+/* CSS Document */
+@import url("reset.css");
+
+body{ text-align:center; background:#fff;}
+.headerCon{ background:url(headerbg.gif) repeat-x left top; width:1000px; margin:0 auto;}
+.header,
+.content,
+.footer{ width:940px; padding:0 10px; margin:0 auto; text-align:left;}
+td{ vertical-align:top;}
+a:link,
+a:visited{ color:#525353;}
+a:hover,
+a:active{ color:#F60;}
+.messageBox{border:none;  max-width:970px; margin:0 auto; background:url(conbg.jpg) repeat-y right top; padding-left:30px; padding-right:30px; }
+.bodyWidth{width:940px; background:url(conbg.jpg) repeat-y right top; margin:0 auto; padding-left:30px; padding-right:30px; }
+.conmain{width:1000px; background-color:#d6e7ef;}
+.header{ background:#fff url(header.gif) no-repeat center top;}
+.top{ background:#d9e4e2 url(top.gif) repeat-x left top; border-bottom:1px solid #c2d0ce; padding:5px 15px; overflow:hidden; _height:1%; _overflow:visible; margin-bottom:3px;}
+.top .link{ float:right;}
+.top,
+.top a:link,
+.top a:visited{ color:#69767e;}
+.top a:hover,
+.top a:active{ color:#62a5d0;}
+.navibar{ position:absolute; height:35px; background:url(navbg.gif) repeat-x left bottom; border-bottom:5px solid #5eb6e4; bottom:0; left:0; width:100%;}
+.nav{ overflow:hidden; _height:1%; _overflow:visible; padding:0 30px; position:absolute; top:-4px;}
+.nav li{ float:left; _display:inline; font-size:14px; margin-right:10px; padding-left:10px;}
+.nav li a{ display:inline-block; line-height:39px; height:39px; padding-right:10px;}
+.nav li a:link,
+.nav li a:visited{ color:#fff;}
+.nav li.current{ background:url(navleft.gif) no-repeat left bottom;}
+.nav li.current a{ background:url(navright.gif) no-repeat right bottom;}
+.nav li.current a:link,
+.nav li.current a:visited{ color:#000;}
+
+.div1{width:800px; margin:0 auto;}
+.content{ background:#fff url(contentbg.gif) repeat-y center top; color:#525353; overflow:hidden;}
+.con{ margin-bottom:7px;}
+.title1{ padding-left:23px; line-height:1.8;}
+.title2 span{ display:inline-block; height:23px; padding:3px 0 0 23px;}
+.list{ padding:10px 15px;}
+ul.list li{ line-height:24px;}
+.fr,
+.more{ float:right; _display:inline;}
+.more{ margin:5px 5px 0 0;}
+.clear{ clear:both; height:1px; line-height:1px;}
+.bluebg{ background:#b7daee; padding:0 7px 7px;}
+.bluebg .title1{ background:url(icon1.gif) no-repeat left center; padding-left:15px;}
+.bluebg .list{ background:#fff;}
+.bluetil{ border:1px solid #c3dae0;}
+.bluetil .title1{ background:#e8f9ff url(icon2.gif) no-repeat 7px center; border-bottom:1px solid #c3dae0;}
+.graytil .title1{ background:#f1f1f1 url(icon3.gif) no-repeat 7px center; border:1px solid #d2d2d2;}
+.graytilCon{ border:1px solid #d2d2d2; border-top:none;}
+input.btn{ cursor:pointer;}
+input.searchConbtn{ border:none; background:url(searchConbtn.gif) no-repeat center; padding:0; width:65px; height:24px; color:#e0eff6;}
+.navChild{ background-color:#3786ce; font-size:14px;}
+.navChild ul li{ line-height:35px; height:35px; background:url(icon5.gif) no-repeat 55px center;}
+.navChild ul li.current{ background:#1f65a4 url(icon5.gif) no-repeat 55px center; border:1px solid #a3c0da; border-left:none; border-right:none;}
+.navChild ul li a{ display:block; padding-left:75px;}
+.navChild ul li a:link,
+.navChild ul li a:visited{ color:#fff;}
+.listCon{ background:#eef8fd; border:1px solid #b4c7d8;}
+.listCon h2.titleblue{ background:#bfd6e2 url(titleblue.gif) repeat-x left top; height:26px; line-height:26px; font-size:14px; font-weight:bold; border-bottom:1px solid #b4c7d8; color:#58738B;}
+.listCon h2.titleblue span{ display:block; background:url(icon6.gif) no-repeat 10px center; padding-left:25px;}
+.listblue{ margin:25px 45px 50px;}
+.listblue li{ border-bottom:1px solid #b4c7d8; padding:7px 10px;}
+.position{ text-align:right; padding:8px 30px;}
+.pst{background-color:#ededed; margin-bottom:2px; margin-top:2px;}
+.middcontent{ background:url(conline.jpg) repeat-x left top; padding:3px;}
+.position a:hover,
+.position a:active{ color:#00baff;}
+.page{ text-align:center; border-top:1px solid #b4c7d8; padding:10px 0; margin-top:10px;}
+.page a:link,
+.page a:visited{ color:#164e81;}
+.page a:hover,
+.page a:active{ color:#F60;}
+
+.footerCon{ background:url(footerbg.gif) repeat-x left top; width:1000px; margin:0 auto;}
+.footer{ background:#fff url(footer.gif) no-repeat center top; overflow:hidden;}
+.footer .end{ background:#c5e0f0; margin-top:1px; color:#195794; text-align:center; padding:8px 0 9px; margin-bottom:20px;}
+
+
+
+
+
+
+

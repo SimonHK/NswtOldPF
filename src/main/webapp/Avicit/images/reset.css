@@ -1,0 +1,14 @@
+@charset "gb2312";
+/* CSS Document */
+a { text-decoration: none; border: 0; background-color: transparent; }
+a:hover { text-decoration: none; background-color: transparent; }
+a:active{ outline:0;}
+body,div,form,
+ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,p{ margin: 0; padding:0;}
+ul,dl,li{list-style: none;}
+img{border: none 0;}
+body,td,textarea{ line-height:1.6;}
+body,input,textarea,select,button{margin: 0; font-size: 12px;font-family:"ËÎÌו" sans-serif;}
+div,p,table,th,td{ line-height:inherit;}
+h1 { font-size:14px; font-family:"ËÎÌו", sans-serif; font-weight: normal;}
+h2, h3 { font-size: 12px; font-family:"ËÎÌו", sans-serif; font-weight: normal;}

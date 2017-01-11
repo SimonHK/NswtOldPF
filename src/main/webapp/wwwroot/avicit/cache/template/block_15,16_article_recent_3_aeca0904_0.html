@@ -1,0 +1,12 @@
+<!--循环：article count：3-->
+<% DataTable dt_3 = TemplateData.getDocList("article","新闻中心/集团新闻,新闻中心/基础院新闻","current","null","recent","3","null");
+if(dt_3==null){write("没有找到栏目：新闻中心/集团新闻,新闻中心/基础院新闻");}else{
+for(int i=1;i<dt_3.getRowCount();i++){
+DataRow article_3  = dt_3.getDataRow(i);
+%>
+
+				  <tr>
+					<td align="left" class="td_dashed list"><a href="${article_3.link}" class="Txt01">${article_3.title|charwidth=28}</a></td>
+					<td align="right" class="td_dashed">[${article_3.publishdate|format=yyyy-MM-dd}]</td>
+				  </tr>
+                  <%}}%>

@@ -1,0 +1,67 @@
+@charset "gb2312";
+/* CSS Document */
+.title1,
+.title2{ font-size:14px; color:#034784;}
+
+.work{ background:#edf5f7; padding:12px 2px 0;}
+.work h2.title2{ background:#fff url(titlebg1.gif) repeat-x left bottom; border:1px solid #c3dae0; border-bottom-color:#418db7; padding:0 5px 0;}
+.work h2.title2 span{ background:url(titlebg2.gif) no-repeat left bottom; padding:2px 18px 0;}
+.work ul.list{ margin-right:10px; padding:0;}
+.search{ margin:12px auto 10px;}
+.search input{ vertical-align:middle;}
+.search input.txt{ border:1px solid #a5c3cb; width:177px; line-height:17px; height:17px;}
+.search input.searchbtn{ width:61px; height:21px; line-height:21px; background:url(searchbtn.gif) no-repeat center; color:#fff; font-weight:bold; border:none; padding:0; cursor:pointer;}
+.system{ border:1px solid #d0cfcf; padding:4px;}
+.notice{ background:url(noticebg.gif) no-repeat center bottom;}
+.notice h2.title2{ background:#366a97 url(titlebg3.gif) no-repeat right top; color:#fff;}
+.notice h2.title2 span{ background:url(titlebg4.gif) no-repeat left top;}
+.data{ background:#b7daee url(databg.gif) no-repeat center bottom;}
+.data h2.title2{ background:url(titlebg5.gif) no-repeat right top;}
+.data h2.title2 span{ background:url(titlebg6.gif) no-repeat left top; height:20px; padding-top:6px;}
+.data ul.list{ padding-bottom:50px;}
+.notice ul.list li,
+.data ul.list li{ line-height:22px;}
+.notice li a:link,
+.notice li a:visited,
+.data li a:link,
+.data li a:visited{ color:#26557d;}
+.notice li a:hover,
+.notice li a:active,
+.data li a:hover,
+.data li a:active{ color:#F60;}
+.brand{ width:45%; float:left;}
+.quality{ width:53.5%; float:right;}
+.forum,
+.survey,
+.message{ border:1px solid #d0cfcf; width:292px; padding:7px; text-align:left;}
+.forum h2,
+.survey h2,
+.message h2{ height:22px; line-height:20px; margin-bottom:4px; padding-left:60px; font-size:14px;}
+.forum h2{ background:url(titleforum.gif) no-repeat left top;}
+.survey h2{ background:url(titlesurvey.gif) no-repeat left top;}
+.message h2{ background:url(titlemessage.gif) no-repeat left top;}
+.forum h2 a:link,
+.forum h2 a:visited{ color:#ab8b31;}
+.survey h2 a:link,
+.survey h2 a:visited{ color:#688642;}
+.message h2 a:link,
+.message h2 a:visited{ color:#42878b;}
+.friendlink{ background:#c5e0f0; margin-top:1px;}
+.friendlink select{ width:160px;}
+.bottom{ color:#195794; text-align:center; padding:8px 0;}
+
+.playImg{ background:url(playbg.gif) no-repeat left top; width:255px; height:150px; padding:10px; overflow:hidden;}
+.playNum{ float:right; _display:inline; border:1px solid #97b5bd; border-right:none; background:#d7e7eb;}
+.playNum li{ float:left; border-right:1px solid #97b5bd; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:14px; line-height:1;}
+.playNum li a{ display:block; padding:2px 12px;}
+.playNum li a:link,
+.playNum li a:visited{ color:#86a1ae;}
+.playNum li.here a:link,
+.playNum li.here a:visited,
+.playNum li a:hover,
+.playNum li a:active{ background:#b5cad4; color:#fff;}
+.playImg2{ border:1px solid #ccd2d4; padding:4px; width:125px; margin-left:5px; height:135px; margin-bottom:4px; overflow:hidden;}
+.playImg img,
+.playImg2 img{ display:none;}
+
+

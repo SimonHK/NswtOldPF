@@ -1,0 +1,106 @@
+@charset "gb2312";
+/* CSS Document */
+
+/* 质量达标 */
+.circular td img{ margin-bottom:15px;}
+.circular td ul.list{ padding:0px;}
+.gradientbg{ background:url(gradientbg.gif) repeat-y right top;}
+.searchCon{ background:#c5e7fb;}
+.searchCon h2{ font-size:14px; color:#306ca4; background:url(icon2.gif) no-repeat 7px center; margin-bottom:5px;}
+.searchCon table th{ font-weight:normal; text-align:right; color:#020202;}
+.searchCon table td input.txt{ width:90px; border:1px solid #969696;}
+.searchCon table td select{ width:90px; overflow:auto;}
+.statistic{ background:#96c3de; text-align:center; padding-bottom:50px;}
+.statistic h2{ font-size:14px; color:#fff; background:url(icon4.gif) no-repeat 7px center; text-align:left; margin-bottom:5px;}
+
+/* 品牌建设 */
+.brand{ background:url(brandbg.gif) no-repeat right bottom; margin:0 -10px; padding:0px 10px;}
+.brandimg{ background:#f8f8f8; margin:0 auto;}
+.brandimg td{ text-align:center;}
+
+/* 信誉建设 */
+.news,
+.statement,
+.download{ margin:10px 15px 15px;}
+.news .graytilCon{ background:url(newsbg.gif) no-repeat left top;}
+.news .graytilCon td.left{ padding:10px 0 20px 80px;}
+.news .graytilCon td.right{ text-align:center; padding-top:20px; width:230px;}
+.news .graytilCon td img{ margin-bottom:15px;}
+.statement tr.title td{ vertical-align:bottom;}
+.statement h2.title1{ border-right:none; padding-top:1px;}
+.searchSta{ background:url(statementseh.gif) no-repeat right bottom; width:310px; height:33px;}
+.searchSta form{ margin:0 0 0 33px; height:27px; color:#0c0c0c;}
+.searchSta form input{ vertical-align:middle;}
+.searchSta form input.txt{ border:1px solid #383838; padding:2px; width:125px;}
+.searchSta form input.btn{ border:none; background:url(statementsehbtn.gif) no-repeat center; width:23px; height:24px; padding:0;}
+.statement .graytilCon{ background:url(statementbg.gif) no-repeat left top;}
+.statement .graytilCon ul.list{ background:url(statementbg2.gif) no-repeat right bottom;}
+.download{ background:url(downloadbg.gif) no-repeat left 20px;}
+.download ul.graytilCon{ background:url(downloadbg2.gif) no-repeat right bottom;}
+.statement .graytilCon ul.list,
+.download ul.graytilCon{ padding:10px 245px 20px 95px;}
+
+/* 示范工程 */
+.project{ margin:5px;}
+.project a:link,
+.project a:visited{ color:#024565;}
+.project a:hover,
+.project a:active{ color:#F60;}
+.dynamic,
+.item,
+.file{ padding:0 10px;}
+.dynamic,
+.item{ padding-top:25px; width:381px;}
+.file{ padding-top:10px; padding-bottom:20px;}
+.dynamicimg{ background:url(dynamicbg.gif) repeat-x left bottom;}
+.dynamicimg td{ text-align:center;}
+.item{ background:#e7f4fb;}
+.item dl{ margin:12px 15px 20px;}
+.item dl dt{ font-size:16px; font-weight:bold; margin-bottom:5px;}
+.item dl dt,
+.item dl dt a:link,
+.item dl dt a:visited{ color:#06c;}
+.item dl dt a:hover,
+.item dl dt a:active{ color:#F60;}
+.item dl dd{ line-height:24px;}
+
+/* 检测机构 */
+.agency h2{ font-size:14px; color:#034784;}
+.name { background:url(namebg.jpg) no-repeat right bottom;}
+.searchAgency h2{ background:#b7daee url(icon1.gif) no-repeat 7px center;}
+.searchAgency .searchAgecon{ background:#d8eefa; border:1px solid #b7daee; margin-top:1px; padding:15px 20px; color:#140505;}
+.searchAgency .searchAgecon input{ vertical-align:middle;}
+.searchAgency .searchAgecon input.txt{ border:1px solid #bcbcbc; padding:3px 2px; width:215px; margin:5px 0;}
+.searchAgency .searchAgecon input.long{ width:585px;}
+.map{ border:1px solid #b7daee;}
+
+/* 法律法规 */
+.law{ background:#ededed url(lawbg.jpg) no-repeat left top; margin-bottom:10px;}
+.manage{ background:#ededed url(managebg.jpg) no-repeat left top; margin-bottom:10px;}
+.law .distance{ height:90px; background:url(lawbg.jpg) no-repeat left bottom;}
+.manage .distance{ height:90px; background:url(managebg.jpg) no-repeat left bottom;}
+.lawCon{ background:#fff url(lawCon.gif) no-repeat left top; padding:20px;}
+.manageCon{ background:#fff url(manageCon.gif) no-repeat left top; padding:20px;}
+.book{ background:url(imgbg.gif) no-repeat left top; padding:5px;}
+.booklink{ text-align:right; padding-top:20px; padding-bottom:40px;}
+.booklink a{ font-size:14px; font-weight:bold; text-decoration:underline; }
+.booklink a:link,
+.booklink a:visited{ color:#2882d5;}
+
+/* list&detail */
+.detailPos{ background:#ededed; margin:3px 0;}
+.detail{ background:#fff url(detailbg.gif) repeat-x left top; margin-bottom:3px;}
+.detail .listCon h2.titleblue{ padding-left:15px; font-weight:normal; color:#164e81; height:30px; line-height:30px; font-size:14px; background:#94b7d9 url(listtitle.gif) repeat-x left top; border-bottom:1px solid #b4c7d8;}
+.listimg,
+.detailimg{ padding:25px 50px 140px;}
+.listimg{ background:url(listimg.gif) no-repeat center bottom;}
+.listimg .listblue{ margin-bottom:10px;}
+.listimg .page{ border:none; padding-bottom:40px;}
+.detailimg{ background:url(detailimg.gif) no-repeat left bottom; padding-bottom:180px;}
+.detailimg h1{ font-size:16px; font-weight:bold; color:#0088de; border-bottom:1px solid #86bee2; text-align:center; margin-bottom:25px; padding:5px;}
+.detailimg .detailCon{ padding:0 30px;}
+.detailimg .detailCon p,.detailimg .detailCon strong,.detailimg .detailCon div{
+	text-align:left;
+	font-size:12px;
+	font-weight:normal;
+	}

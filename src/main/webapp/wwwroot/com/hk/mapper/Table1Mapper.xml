@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hk.dao.Table1Mapper">
+  <resultMap id="BaseResultMap" type="com.hk.domain.Table1">
+    <id column="idnew_table" jdbcType="INTEGER" property="idnewtable" />
+    <result column="new_tablecol" jdbcType="VARCHAR" property="newtablecol" />
+    <result column="table1col" jdbcType="VARCHAR" property="table1col" />
+    <result column="table1col1" jdbcType="VARCHAR" property="table1col1" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hk.domain.Table1">
+    <selectKey keyProperty="idnewtable" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into table1 (new_tablecol, table1col, table1col1
+      )
+    values (#{newtablecol,jdbcType=VARCHAR}, #{table1col,jdbcType=VARCHAR}, #{table1col1,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.hk.domain.Table1">
+    update table1
+    set new_tablecol = #{newtablecol,jdbcType=VARCHAR},
+      table1col = #{table1col,jdbcType=VARCHAR},
+      table1col1 = #{table1col1,jdbcType=VARCHAR}
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+  </select>
+  <resultMap id="BaseResultMap" type="com.hk.domain.Table1">
+    <id column="idnew_table" jdbcType="INTEGER" property="idnewtable" />
+    <result column="new_tablecol" jdbcType="VARCHAR" property="newtablecol" />
+    <result column="table1col" jdbcType="VARCHAR" property="table1col" />
+    <result column="table1col1" jdbcType="VARCHAR" property="table1col1" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hk.domain.Table1">
+    <selectKey keyProperty="idnewtable" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into table1 (new_tablecol, table1col, table1col1
+      )
+    values (#{newtablecol,jdbcType=VARCHAR}, #{table1col,jdbcType=VARCHAR}, #{table1col1,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.hk.domain.Table1">
+    update table1
+    set new_tablecol = #{newtablecol,jdbcType=VARCHAR},
+      table1col = #{table1col,jdbcType=VARCHAR},
+      table1col1 = #{table1col1,jdbcType=VARCHAR}
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+  </select>
+  <resultMap id="BaseResultMap" type="com.hk.domain.Table1">
+    <id column="idnew_table" jdbcType="INTEGER" property="idnewtable" />
+    <result column="new_tablecol" jdbcType="VARCHAR" property="newtablecol" />
+    <result column="table1col" jdbcType="VARCHAR" property="table1col" />
+    <result column="table1col1" jdbcType="VARCHAR" property="table1col1" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hk.domain.Table1">
+    <selectKey keyProperty="idnewtable" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into table1 (new_tablecol, table1col, table1col1
+      )
+    values (#{newtablecol,jdbcType=VARCHAR}, #{table1col,jdbcType=VARCHAR}, #{table1col1,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.hk.domain.Table1">
+    update table1
+    set new_tablecol = #{newtablecol,jdbcType=VARCHAR},
+      table1col = #{table1col,jdbcType=VARCHAR},
+      table1col1 = #{table1col1,jdbcType=VARCHAR}
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+  </select>
+  <resultMap id="BaseResultMap" type="com.hk.domain.Table1">
+    <id column="idnew_table" jdbcType="INTEGER" property="idnewtable" />
+    <result column="new_tablecol" jdbcType="VARCHAR" property="newtablecol" />
+    <result column="table1col" jdbcType="VARCHAR" property="table1col" />
+    <result column="table1col1" jdbcType="VARCHAR" property="table1col1" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hk.domain.Table1">
+    <selectKey keyProperty="idnewtable" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into table1 (new_tablecol, table1col, table1col1
+      )
+    values (#{newtablecol,jdbcType=VARCHAR}, #{table1col,jdbcType=VARCHAR}, #{table1col1,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.hk.domain.Table1">
+    update table1
+    set new_tablecol = #{newtablecol,jdbcType=VARCHAR},
+      table1col = #{table1col,jdbcType=VARCHAR},
+      table1col1 = #{table1col1,jdbcType=VARCHAR}
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+    where idnew_table = #{idnewtable,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select idnew_table, new_tablecol, table1col, table1col1
+    from table1
+  </select>
+</mapper>

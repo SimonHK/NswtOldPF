@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="">
+    <title>Title</title>
+    <link rel="stylesheet" href="vendor/css/vendor.css" />
+    <link rel="stylesheet" href="dist/formbuilder.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*
+          body {
+            background-color: #444;
+            font-family: sans-serif;
+          }*/
+
+        .tformbuilder {
+            background-color: #d1d1d1;
+            border-radius: 5px;
+            min-height: 600px;
+        }
+
+        input[type=text] {
+            height: 26px;
+            margin-bottom: 3px;
+        }
+
+        select {
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+<div class='tformbuilder'></div>
+
+<script src="vendor/js/vendor.js"></script>
+<script src="dist/formbuilder.js"></script>
+
+<script>
+    $(function(){
+    builder = new Formbuilder({
+        selector: '.tformbuilder',
+        bootstrapData: [
+        ]
+        });
+     builder.on('save', function(payload){
+            alert(payload);
+        })
+    });
+</script>
+</body>
+</html>

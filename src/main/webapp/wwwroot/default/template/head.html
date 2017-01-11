@@ -1,0 +1,27 @@
+<link type="text/css" rel="stylesheet" href="../images/style.css" />
+<table class="Table" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><img src="../images/logo.gif" align="left" /></td>
+    <td width="252" valign="bottom" >
+	    <form action="${System.SearchAction}">
+	<div class="Div_search"><input type="text" size="22" name="query" id="query" /> <input type="hidden" name="site" value="${Site.ID}" /></div>
+	<div align="right"><input type="submit" class="sea" value="&nbsp;" /></div>
+    </form>
+	</td>
+  </tr>
+  <tr>
+	  <td colspan="2">
+	  	<table class="NavBg" align="right" width="80%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td align="center"><a href="index.shtml" class="navTxt02">首页</a></td>
+			<td align="center" id="<cms:var type="catalog" name="关于我们">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="关于我们/机构设置"></cms:link>" class="navTxt02">关于我们</a></td>
+			<td align="center" id="<cms:var type="catalog" name="科研力量">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="科研力量/科研机构"></cms:link>" class="navTxt02">科研力量</a></td>
+			<td align="center" id="<cms:var type="catalog" name="文化建设">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="文化建设/形象建设"></cms:link>" class="navTxt02">文化建设</a></td>
+			<td align="center" id="<cms:var type="catalog" name="人力资源">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="人力资源/招聘信息"></cms:link>" class="navTxt02">人力资源</a></td>
+			<td align="center" id="<cms:var type="catalog" name="新闻中心">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="新闻中心"></cms:link>" class="navTxt02">新闻中心</a></td>
+			<td align="center" id="<cms:var type="catalog" name="联系我们">${catalog.innercode}</cms:var>"><a href="<cms:link type="catalog" name="联系我们"></cms:link>" class="navTxt02">联系我们</a></td>
+		  </tr>
+		</table>
+	  </td>
+  </tr> 
+</table>
